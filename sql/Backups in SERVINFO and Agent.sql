@@ -1,0 +1,22 @@
+SELECT DISTINCT ServerName 
+FROM Maintenance_BackupSchedule_Full mbs
+INNER JOIN Perf_MonitoredServers pms ON pms.InstanceID = mbs.InstanceID
+INTERSECT
+SELECT DISTINCT SRVR_NM 
+FROM OPENQUERY (SERVINFO, 'SELECT * 
+	FROM CCDB2.MDB_DB_DATA 
+	WHERE BACKUP_GRP <> ''Z''
+	AND DB_STAT = ''PROD''
+	AND DBMS = ''SQL''')
+
+
+SELECT DISTINCT ServerName 
+FROM C1DBD536.SQLMONITOR.dbo.Maintenance_BackupSchedule_Full mbs
+INNER JOIN C1DBD536.SQLMONITOR.dbo.Perf_MonitoredServers pms ON pms.InstanceID = mbs.InstanceID
+INTERSECT
+SELECT DISTINCT SRVR_NM 
+FROM OPENQUERY (SERVINFO, 'SELECT * 
+	FROM CCDB2.MDB_DB_DATA 
+	WHERE BACKUP_GRP <> ''Z''
+	AND DB_STAT <> ''PROD''
+	AND DBMS = ''SQL''')

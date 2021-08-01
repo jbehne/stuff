@@ -1,0 +1,43 @@
+USE [master]
+GO
+
+/****** Object:  Database [ContactManager_QA1]    Script Date: 1/30/2019 12:51:30 PM ******/
+CREATE DATABASE [ContactManager_QA1]
+ CONTAINMENT = NONE
+ ON  PRIMARY 
+( NAME = N'ContactManager_QA1', FILENAME = N'L:\Data\ContactManager_QA1.mdf' , SIZE = 1024000KB , FILEGROWTH = 1024000KB ), 
+ FILEGROUP [ADMIN] 
+( NAME = N'ContactManager_QA1_ADMIN', FILENAME = N'L:\Data\ContactManager_QA1_ADMIN.ndf' , SIZE = 102400KB , FILEGROWTH = 102400KB ), 
+ FILEGROUP [INDEX] 
+( NAME = N'ContactManager_QA1_INDEX', FILENAME = N'L:\Data\ContactManager_QA1_INDEX.ndf' , SIZE = 102400KB , FILEGROWTH = 102400KB ), 
+ FILEGROUP [LOB] 
+( NAME = N'ContactManager_QA1_LOB', FILENAME = N'L:\Data\ContactManager_QA1_LOB.ndf' , SIZE = 102400KB , FILEGROWTH = 102400KB ), 
+ FILEGROUP [OP] 
+( NAME = N'ContactManager_QA1_OP', FILENAME = N'L:\Data\ContactManager_QA1_OP.ndf' , SIZE = 102400KB , FILEGROWTH = 102400KB ), 
+ FILEGROUP [STAGING] 
+( NAME = N'ContactManager_QA1_STAGING', FILENAME = N'L:\Data\ContactManager_QA1_STAGING.ndf' , SIZE = 102400KB , FILEGROWTH = 102400KB ), 
+ FILEGROUP [TYPELIST] 
+( NAME = N'ContactManager_QA1_TYPELIST', FILENAME = N'L:\Data\ContactManager_QA1_TYPELIST.ndf' , SIZE = 102400KB , FILEGROWTH = 102400KB )
+ LOG ON 
+( NAME = N'ContactManager_QA1 _log', FILENAME = N'M:\Data\ContactManager_QA1_log.ldf' , SIZE = 1024000KB , FILEGROWTH = 1024000KB )
+GO
+
+CREATE DATABASE [ClaimCenter_QA1]
+ CONTAINMENT = NONE
+ ON  PRIMARY 
+( NAME = N'ClaimCenter_QA1', FILENAME = N'L:\Data\ClaimCenter_QA1 .mdf' , SIZE = 1024000KB , FILEGROWTH = 1024000KB ), 
+ FILEGROUP [ADMIN] 
+( NAME = N'ClaimCenter_QA1_ADMIN', FILENAME = N'L:\Data\ClaimCenter_QA1_ADMIN.ndf' , SIZE = 102400KB , FILEGROWTH = 102400KB ), 
+ FILEGROUP [INDEX] 
+( NAME = N'ClaimCenter_QA1_INDEX', FILENAME = N'L:\Data\ClaimCenter_QA1_INDEX.ndf' , SIZE = 102400KB , FILEGROWTH = 102400KB ), 
+ FILEGROUP [LOB] 
+( NAME = N'ClaimCenter_QA1_LOB', FILENAME = N'L:\Data\ClaimCenter_QA1_LOB.ndf' , SIZE = 102400KB , FILEGROWTH = 102400KB ), 
+ FILEGROUP [OP] 
+( NAME = N'ClaimCenter_QA1_OP', FILENAME = N'L:\Data\ClaimCenter_QA1_OP.ndf' , SIZE = 102400KB , FILEGROWTH = 102400KB ), 
+ FILEGROUP [STAGING] 
+( NAME = N'ClaimCenter_QA1_STAGING', FILENAME = N'L:\Data\ClaimCenter_QA1_STAGING.ndf' , SIZE = 102400KB , FILEGROWTH = 102400KB ), 
+ FILEGROUP [TYPELIST] 
+( NAME = N'ClaimCenter_QA1_TYPELIST', FILENAME = N'L:\Data\ClaimCenter_QA1_TYPELIST.ndf' , SIZE = 102400KB , FILEGROWTH = 102400KB )
+ LOG ON 
+( NAME = N'ClaimCenter_QA1 _log', FILENAME = N'M:\Data\ClaimCenter_QA1 _log.ldf' , SIZE = 1024000KB , FILEGROWTH = 1024000KB )
+GO
