@@ -1,1 +1,0 @@
-﻿robocopy "\\C1utl209\e`$\SQLServer\PS module\SQLPS" "C:\Windows\System32\WindowsPowerShell\v1.0\Modules\SQLPS"

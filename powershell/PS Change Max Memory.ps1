@@ -1,1 +1,0 @@
-﻿Invoke-Sqlcmd -ServerInstance C1DBD106 -Query "EXEC sys.sp_configure N'show advanced options', 1;RECONFIGURE WITH OVERRIDE;EXEC sys.sp_configure N'max server memory (MB)', N'22936';RECONFIGURE WITH OVERRIDE;EXEC sys.sp_configure N'show advanced options', 0;RECONFIGURE WITH OVERRIDE;"

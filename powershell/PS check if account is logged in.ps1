@@ -1,1 +1,0 @@
-﻿(gwmi Win32_Process | Where name -like "explorer*").getowner().user
