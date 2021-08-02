@@ -1,2 +1,0 @@
-backup database paypilot to disk = '\\blm-bak-10-dd\sql_prod\c1dbd020\paypilot\paypilot_03162019_premigration.bak' with stats = 10, compression
-backup database ppilot to disk = '\\blm-bak-10-dd\sql_prod\c1dbd020\ppilot\ppilot_03162019_premigration.bak' with stats = 10, compression
